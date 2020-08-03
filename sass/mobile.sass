@@ -1,0 +1,81 @@
+html
+    scroll-behavior: smooth // płynne powolno przejście pomiędzy zakładkami     
+body
+    position: relative
+    font-family: 'Montserrat', sans-serif
+    background-color: #3c3c3d
+    
+//Navigation section
+
+nav
+    text-transform: uppercase
+    background-color: #ffffff00
+
+    a, i
+        color: #fff
+    a:hover
+        color: #fff48f
+    i
+        padding: 10px
+    .navbar-brand 
+        font-weight: bold
+    .active, span
+        color: #fff48f
+//header
+header
+    h1
+        text-transform: uppercase
+        font-size: 30px
+    .img-header
+        height: 100vh
+        position: relative
+        background-image: url("../img/video-controller-336657_1280.jpg")
+        background-position: center
+        background-size: cover
+        background-attachment: fixed
+        z-index: 0
+    .shadow-header
+        position: absolute
+        width: 100%
+        height: 100%
+        background-color: rgba(0, 0, 0, .8)
+        z-index: -10
+    .text
+        display: flex
+        text-align: center
+        align-items: center
+        justify-content: center
+        height: 100%
+        flex-direction: column
+        color:#fff
+    p
+        padding: 10px
+        font-size: 14px
+    .text span 
+        color: #fff48f
+    .btn-outline-light
+        text-transform: uppercase
+
+    .fa-chevron-down
+        display: none
+        position: absolute
+        bottom: 0
+        left: 50%
+        transform: translateX(-50%) 
+        font-size: 30px
+        color: #fff48f
+
+.test
+    height: 100vh
+
+@media (min-width: 375px)
+    header
+        h1
+            font-size: 36px
+        p
+            font-size: 16px
+    
+
+     
+
+
