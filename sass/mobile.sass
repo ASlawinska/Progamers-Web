@@ -1,10 +1,31 @@
+$yellow-color: #fff48f
+
 html
     scroll-behavior: smooth // płynne powolno przejście pomiędzy zakładkami     
 body
     position: relative
     font-family: 'Montserrat', sans-serif
     background-color: #3c3c3d
-    
+//Wrapper
+.wrapper
+    width: 80%
+    margin: 0 auto
+
+    h2
+        text-transform: uppercase
+        margin: 0 auto 40px
+        text-align: center
+.underline
+    width: 60px
+    height: 4px
+    background-color: $yellow-color
+    margin: 0 auto
+.scroll-fix::before
+    display: block
+    height: 66px
+    margin-top: -66px
+    content: ''
+
 //Navigation section
 
 nav
@@ -14,21 +35,23 @@ nav
     a, i
         color: #fff
     a:hover
-        color: #fff48f
+        color: $yellow-color
     i
         padding: 10px
+        font-size: 20px
     .navbar-brand 
         font-weight: bold
     .active, span
-        color: #fff48f
+        color: $yellow-color
 .shadow-bg
     background-color: rgba(0, 0, 0,.8 )
     transition: background-color .5s
 //header
 header
+    overflow: hidden
     h1
         text-transform: uppercase
-        font-size: 30px
+        font-size: 28px
     .img-header
         height: 100vh
         position: relative
@@ -55,16 +78,13 @@ header
         padding: 10px
         font-size: 14px
     .text span 
-        color: #fff48f
+        color: $yellow-color
     .btn-outline-light
         text-transform: uppercase
 
     .fa-chevron-down
         display: none
 
-
-.test
-    height: 100vh
 
 
 @media (min-width: 375px)
@@ -74,7 +94,19 @@ header
         p
             font-size: 16px
     
-
-     
+// Main AboutUs
+#aboutus
+    i
+        margin-top: 40px
+        font-size: 30px
+    h3
+        text-transform: uppercase
+        font-size: 18px
+    p
+        font-size: 14px
+    .aboutus-hover
+        transition: color .3s
+    .aboutus-hover:hover
+        color: $yellow-color
 
 
