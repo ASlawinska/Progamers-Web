@@ -33,6 +33,12 @@ nav .active, nav span {
   color: #fff48f;
 }
 
+.shadow-bg {
+  background-color: rgba(0, 0, 0, 0.8);
+  -webkit-transition: background-color .5s;
+  transition: background-color .5s;
+}
+
 header h1 {
   text-transform: uppercase;
   font-size: 30px;
@@ -90,13 +96,6 @@ header .btn-outline-light {
 
 header .fa-chevron-down {
   display: none;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  font-size: 30px;
-  color: #fff48f;
 }
 
 .test {
