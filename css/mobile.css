@@ -33,6 +33,10 @@ body {
   content: '';
 }
 
+.jumbotron {
+  margin: 0;
+}
+
 nav {
   text-transform: uppercase;
   background-color: #ffffff00;
@@ -128,15 +132,6 @@ header .fa-chevron-down {
   display: none;
 }
 
-@media (min-width: 375px) {
-  header h1 {
-    font-size: 36px;
-  }
-  header p {
-    font-size: 16px;
-  }
-}
-
 #aboutus i {
   margin-top: 40px;
   font-size: 30px;
@@ -154,9 +149,72 @@ header .fa-chevron-down {
 #aboutus .aboutus-hover {
   -webkit-transition: color .3s;
   transition: color .3s;
+  visibility: hidden;
 }
 
 #aboutus .aboutus-hover:hover {
   color: #fff48f;
+}
+
+#aboutus-second {
+  color: #ffffff;
+}
+
+#aboutus-second i {
+  margin-top: 40px;
+  font-size: 30px;
+}
+
+#aboutus-second h3 {
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+#aboutus-second p {
+  font-size: 14px;
+}
+
+#aboutus-second .jumbotron {
+  padding: 50px 0;
+}
+
+#aboutus-second .jumbotron-bg {
+  position: relative;
+  background-image: url("../img/jumbotron-img.jpg");
+  background-position: center;
+  background-size: cover;
+  z-index: 0;
+}
+
+#aboutus-second .shadow-aboutus-second {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  -webkit-transition: background-color .5s;
+  transition: background-color .5s;
+  z-index: -10;
+}
+
+@media (min-width: 375px) {
+  header h1 {
+    font-size: 36px;
+  }
+  header p {
+    font-size: 18px;
+  }
+  #aboutus-second h3 {
+    font-size: 36px;
+  }
+  #aboutus-second p {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 414px) {
+  .jumbotron {
+    padding: 80px 0;
+  }
 }
 /*# sourceMappingURL=mobile.css.map */
