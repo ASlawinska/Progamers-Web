@@ -13,7 +13,7 @@ body {
   margin: 0 auto;
 }
 
-.wrapper h2 {
+h2 {
   text-transform: uppercase;
   margin: 0 auto 40px;
   text-align: center;
@@ -23,7 +23,7 @@ body {
   width: 60px;
   height: 4px;
   background-color: #fff48f;
-  margin: 0 auto;
+  margin: 0 auto 10px;
 }
 
 .scroll-fix::before {
@@ -31,6 +31,10 @@ body {
   height: 66px;
   margin-top: -66px;
   content: '';
+}
+
+.visibility {
+  visibility: hidden;
 }
 
 .jumbotron {
@@ -149,7 +153,6 @@ header .fa-chevron-down {
 #aboutus .aboutus-hover {
   -webkit-transition: color .3s;
   transition: color .3s;
-  visibility: hidden;
 }
 
 #aboutus .aboutus-hover:hover {
@@ -158,6 +161,7 @@ header .fa-chevron-down {
 
 #aboutus-second {
   color: #ffffff;
+  overflow: hidden;
 }
 
 #aboutus-second i {
@@ -195,6 +199,10 @@ header .fa-chevron-down {
   -webkit-transition: background-color .5s;
   transition: background-color .5s;
   z-index: -10;
+}
+
+#carouselPortfolio {
+  display: none;
 }
 
 @media (min-width: 375px) {

@@ -8,6 +8,31 @@ header
         font-size: 30px
         color: #fff48f
         animation: bounce 1.5s infinite
+//Portfolio
+
+#carouselPortfolio
+    display: block
+    .carousel-item
+        position: relative
+        height: 450px
+        img
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+    .carousel-caption
+        position: absolute
+        left: 0
+        right: 0
+        background-color: rgba(0, 0, 0,.8 )
+        padding: 20px 0
+    .carousel-indicators
+        padding-bottom: 20px
+#portfolio
+    .card-deck
+        display: none
+        
+
 @media (min-width: 1200px)
     .jumbotron
         padding: 100px 0

@@ -11,20 +11,23 @@ body
     width: 80%
     margin: 0 auto
 
-    h2
-        text-transform: uppercase
-        margin: 0 auto 40px
-        text-align: center
+h2
+    text-transform: uppercase
+    margin: 0 auto 40px
+    text-align: center
 .underline
     width: 60px
     height: 4px
     background-color: $yellow-color
-    margin: 0 auto
+    margin: 0 auto 10px
+   
 .scroll-fix::before
     display: block
     height: 66px
     margin-top: -66px
     content: ''
+.visibility
+    visibility: hidden // wszystkie elementy są ukryte
 .jumbotron
     margin: 0
 //Navigation section
@@ -99,11 +102,11 @@ header
         font-size: 14px
     .aboutus-hover
         transition: color .3s
-        visibility: hidden // wszystkie elementy są ukryte
     .aboutus-hover:hover
         color: $yellow-color
 #aboutus-second
     color: #ffffff
+    overflow: hidden //aby nie wyciekało
     i
         margin-top: 40px
         font-size: 30px
@@ -128,6 +131,8 @@ header
         background-color: rgba(0, 0, 0,.7 )
         transition: background-color .5s 
         z-index: -10
+#carouselPortfolio
+    display: none
 
 @media (min-width: 375px)
     header
