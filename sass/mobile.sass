@@ -8,6 +8,7 @@ body
     background-color: #3c3c3d
 //Wrapper
 .wrapper
+    max-width: 2560px
     width: 80%
     margin: 0 auto
 
@@ -134,6 +135,8 @@ header
 #carouselPortfolio
     display: none
 
+
+
 @media (min-width: 375px)
     header
         h1
@@ -149,6 +152,17 @@ header
 @media (min-width: 414px)
     .jumbotron
         padding: 80px 0
-    
 
+@media (min-width: 576px)
+    .img-card
+        position: relative
+        height: 70px
+        display: block
+        overflow: hidden
+        .card-img-top
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            
 
