@@ -5,4 +5,8 @@ header h1 {
 header p {
   font-size: 20px;
 }
+
+#team .jumbotron-team .card-deck .card-text {
+  font-size: 16px;
+}
 /*# sourceMappingURL=medium.css.map */
